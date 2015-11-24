@@ -6,9 +6,9 @@ var currentDate = new Date();
 //be used to builf our date.
 
 //currentTime will look like '2015-11-24 at 12:30:30'
-var currentTime = currentDate.getFullYear() + '-' + 		//Set year
-									(currentDate.getMonth() + 1)+ '-' +	  //Set month
-									currentDate.getDate() + ' at ' + 			//Set day of the month
-									currentDate.getHours() + ':' + 				//Set hours
-									currentDate.getMinutes() + ':' + 			//Set minutes
-									currentDate.getSeconds();							//Set seconds
+var currentTime = currentDate.getFullYear() + '-' + //Set year
+									(currentDate.getMonth() + 1)+ '-' +	//Set month
+									currentDate.getDate() + ' at ' + //Set day of the month
+									currentDate.getHours() + ':' + //Set hours
+									currentDate.getMinutes() + ':' + //Set minutes
+									currentDate.getSeconds();	//Set seconds
