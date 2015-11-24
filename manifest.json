@@ -1,0 +1,12 @@
+{
+	"manifest_version": 2,
+	"name": "cakebook",
+	"description": "Replace photos on Facebook with cakes",
+	"version": "0.0.1",
+	"content_scripts": [
+		{
+			"matches": ["*://www.facebook.com/*"],
+			"js": ["cakebook.js"]
+		}
+	]
+}
