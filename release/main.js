@@ -27,6 +27,10 @@ var cbValues = {
 
 //Get the user's name.
 var userName = prompt("Hello, what's your name?");
+//If no name is given, prompt again.
+if (!userName) {
+	userName = prompt("You didn't enter a name. Please try again.");
+}
 //Get the user's phone number.
 var phoneNumber = prompt("Hello " + userName + ", What is your phone number?");
 //Phone number Regex pattern
@@ -42,6 +46,15 @@ if (phoneNumberPattern.test(phoneNumber)) {
 	output = output + "<h2>I'm sorry but that phone number is not valid: " + phoneNumber;
 }
 //Insert the output into the web page.
-document.body.innerHTML = output;
+//document.body.innerHTML = output;
 
-var images = document.querySelectorAll('div._1dwg');
+var images = document.querySelectorAll('div.userContentWrapper img');
+
+for (var i = 0; i < images.src.length; i++) {
+	console.log(images.src[i]);
+}
+
+// function getImages() {
+//   var images = document.querySelectorAll('div.userContentWrapper img, div.pinHolder img');
+//   return images;
+// }
