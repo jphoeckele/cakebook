@@ -16,5 +16,11 @@ var currentTime = currentDate.getFullYear() + '-' + //Set year
 var cbValues = {
 	projectName: projectName,
 	versionNumber: versionNumber,
-	currentTime: currentTime
+	currentTime: currentTime,
+	areaCodes: {
+		'573': 'Missouri',
+		'305': 'Miami',
+		'786': 'Miami',
+		'314': 'St.Louis'
+	}
 };

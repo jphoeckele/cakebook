@@ -16,7 +16,13 @@ var currentTime = currentDate.getFullYear() + '-' + //Set year
 var cbValues = {
 	projectName: projectName,
 	versionNumber: versionNumber,
-	currentTime: currentTime
+	currentTime: currentTime,
+	areaCodes: {
+		'573': 'Missouri',
+		'305': 'Miami',
+		'786': 'Miami',
+		'314': 'St.Louis'
+	}
 };
 
 //Get the user's name.
@@ -24,7 +30,7 @@ var userName = prompt("Hello, what's your name?");
 //Get the user's phone number.
 var phoneNumber = prompt("Hello " + userName + ", What is your phone number?");
 //Phone number Regex pattern
-var phoneNumberPattern = /1?-?\(?\d{3}[\-\)]\d{3}-\d{4}/;
+var phoneNumberPattern = /(?:1-)?\(?(\d{3})[\-\)]\d{3}-\d{4}/;
 //Variable to store output
 var output = "<h1>Hello, " + userName + "!</h1>";
 //Check's is phone number is valid
