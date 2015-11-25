@@ -12,3 +12,9 @@ var currentTime = currentDate.getFullYear() + '-' + //Set year
 									currentDate.getHours() + ':' + //Set hours
 									currentDate.getMinutes() + ':' + //Set minutes
 									currentDate.getSeconds();	//Set seconds
+
+var cbValues = {
+	projectName: projectName,
+	versionNumber: versionNumber,
+	currentTime: currentTime
+};

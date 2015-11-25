@@ -13,7 +13,15 @@ var currentTime = currentDate.getFullYear() + '-' + //Set year
 									currentDate.getMinutes() + ':' + //Set minutes
 									currentDate.getSeconds();	//Set seconds
 
+var cbValues = {
+	projectName: projectName,
+	versionNumber: versionNumber,
+	currentTime: currentTime
+};
+
 var userName = prompt("Hello, what's your name?");
 document.body.innerHTML = "<h1>Hello, " + userName + "!</h1>" +
-													'<p>' + projectName + ' ' + versionNumber +
-													' accesseed on: ' + currentTime + '</p>';
+													'<p>' + cbValues.projectName + ' ' + cbValues.versionNumber +
+													' viewed on: ' + cbValues.currentTime + '</p>';
+
+var images = document.querySelectorAll('div._1dwg');
